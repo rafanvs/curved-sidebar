@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f1e 0%, #1a0b2e 50%, #0d1b2a 100%);
+  color: #e0e0ff;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 280px;
+  border-right: 1px solid rgba(150, 100, 200, 0.2);
+  z-index: 10;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 900;
+  color: white;
+  letter-spacing: -2px;
+  margin-bottom: 50px;
+}
+.logo span {
+  color: #ff4da6;
+}
+
+.section-title {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #b388ff;
+  margin: 40px 0 16px 12px;
+  opacity: 0.9;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  padding: 0 16px;
+  color: #d0b3ff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  background: rgba(80, 40, 140, 0.65);
+}
+
+.menu-item:hover {
+  color: white;
+}
+
+/* ITEM ATIVO – exatamente como na imagem */
+.menu-item.active {
+  color: white;
+  font-weight: 600;
+  margin-right: 0; /* vai até a borda direita da sidebar */
+  padding-right: 24px;
+  background: transparent;
+}
+
+.menu-item i {
+  margin-right: 16px;
+  font-size: 18px;
+  width: 24px;
+  text-align: center;
+}
+
+.side-top-background {
+  width: 100%;
+  background: rgba(80, 40, 140, 0.65);
+  height: 100px;
+}
+
+.side-background {
+  width: 100%;
+  background: rgba(80, 40, 140, 0.65);
+  height: 100%;
+}
